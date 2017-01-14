@@ -1,0 +1,75 @@
+/**
+* Styles for project tiles
+*/
+
+main.project section.gallery a {
+	text-decoration: none;
+}
+
+main.project section.gallery img {
+	width: 125px;
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+
+/* mbira */
+a.tile section.mbira {
+	background-image: url('../../projects/img/mbira/mbira-tile.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+/* sketchupsim */
+a.tile section.sketchupsim {
+	background-image: url('../../projects/img/sketchupsim/class-demo.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+/* leaptweets */
+a.tile section.leaptweets {
+	background-image: url('../../projects/img/leaptweets/conference-usage.jpg');
+	background-size: cover;
+	background-position: center right;
+}
+
+/* xaprogram */
+a.tile section.xaprogram {
+	background-image: url('../../projects/img/xaprogram/xaprogram-tile.png');
+	background-size: cover;
+}
+
+/* drinknodrive */
+a.tile section.drinknodrive {
+	background-image: url('../../projects/img/drinknodrive/taxi.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+/* instapaint */
+a.tile section.infrapaint {
+	background-image: url('../../projects/img/infrapaint/DSCN0127.JPG');
+	background-size: cover;
+	background-position: center center;
+}
+
+/* aaas */
+a.tile section.aaas {
+	background-image: url('../../projects/img/aaas/aaas-tile.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+/* arcs */
+a.tile section.arcs {
+	background-image: url('../../projects/img/arcs/machupichu.jpeg');
+	background-size: cover;
+	background-position: center center;
+}
+
+/* bookmarkme */
+a.tile section.bookmarkme {
+	background-image: url('../../projects/img/bookmarkme/bookmarkme-tile.png');
+	background-size: cover;
+	background-position: center center;
+}

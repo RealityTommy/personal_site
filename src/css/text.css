@@ -1,0 +1,161 @@
+/**
+* Styles for text
+*/
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+body {
+	font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 32px;
+}
+
+.page-title {
+	text-align: center;
+	font-size: 250%;
+}
+
+.content {
+	line-height: 125%;
+}
+
+a.tile section div.tile-text {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+
+.jumbotron-text {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+}
+
+.indent {
+	padding-left: 32px;
+}
+
+main#about section#cv {
+	text-align: center;
+}
+
+/**
+* Media Queries
+*/
+
+/* mobile phone screen size */
+@media (max-width: 640px) {
+	nav a {
+		font-size: 60%;
+	}
+
+	a.tile section {
+		font-size: 90%;
+	}
+	
+	a.tile section div.tile-text p {
+		margin-top: -25px;
+	}
+	
+	.jumbotron-text h1 {
+		font-size: 250%;
+	}
+}
+
+/* tablet screen size */
+@media (min-width: 641px) and (max-width: 1024px) {
+	nav a {
+		font-size: 80%;
+	}
+	
+	a.tile section {
+		font-size: 85%;
+	}
+	
+	a.tile section div.tile-text p {
+		margin-top: -20px;
+	}
+	
+	.jumbotron-text h1 {
+		font-size: 300%;
+	}
+}
+
+/* desktop screen size */
+@media (min-width: 1025px) and (max-width: 1440px) {
+	nav a {
+		font-size: 80%;
+	}
+	
+	a.tile section {
+		font-size: 105%;
+	}
+	
+	a.tile section div.tile-text {
+		bottom: 20px;
+	}
+	
+	a.tile section div.tile-text p {
+		margin-top: -25px;
+	}
+	
+	.jumbotron-text h1 {
+		font-size: 500%;
+	}
+	
+	.jumbotron-text p {
+		font-size: 125%;
+	}
+}
+
+/* large desktop screen size */
+@media (min-width: 1441px) and (max-width: 1920px) {
+	nav a {
+		font-size: 80%;
+	}
+	
+	a.tile section {
+		font-size: 115%;
+	}
+	
+	a.tile section div.tile-text p {
+		margin-top: -25px;
+	}
+	
+	.jumbotron-text h1 {
+		font-size: 500%;
+	}
+	
+	.jumbotron-text p {
+		font-size: 125%;
+	}
+}
+
+/* x-large desktop screen size */
+@media (min-width: 1921px) {
+	nav a {
+		font-size: 80%;
+	}
+	
+	a.tile section {
+		font-size: 120%;
+	}
+	
+	a.tile section div.tile-text p {
+		margin-top: -25px;
+	}
+	
+	.jumbotron-text h1 {
+		font-size: 500%;
+	}
+	
+	.jumbotron-text p {
+		font-size: 125%;
+	}
+}

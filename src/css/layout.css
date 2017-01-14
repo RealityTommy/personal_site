@@ -1,0 +1,288 @@
+/**
+* Styles for layout
+*/
+
+.wrap {
+	float: left;
+	width: 100%;
+	min-height: calc(100vh - 128px);
+}
+
+header {
+	float: left;
+	width: 100%;
+	height: 64px;
+	line-height: 64px;
+	background: #122C41;
+	text-align: center;
+}
+
+header nav {
+	width: 100%;
+	margin: auto;
+	display: table;
+}
+
+header nav a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+header nav a:hover {
+	background: #245781;
+}
+
+header nav a.logo:hover {
+	background: none;
+}
+
+header nav img {
+	height: 48px;
+	margin-bottom: -18px;
+	
+}
+
+.jumbotron a {
+	margin-right: 24px;
+}
+
+.jumbotron img {
+	height: 24px;
+}
+
+main {
+	float: left;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+
+.jumbotron {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: calc( 100vh - 64px );
+	position: relative;
+	background-image: url('../img/notebookdesk.jpeg');
+	background-size: cover;
+	background-position: center center;
+	background-color: #000;
+}
+
+.jumbotron-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+}
+
+.typed-cursor::after{
+	display: inline-block;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+a.tile section {
+	position: relative;
+}
+
+a.tile section div.tile-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: .25s;
+	-webkit-transition: .25s;
+}
+
+main#about section {
+	margin-bottom: 64px;
+}
+
+.demo-button {
+	background: #122C41;
+	color: #fff;
+	border: 0;
+	outline: none;
+	padding: 12px;
+}
+
+/**
+* Media Queries
+*/
+
+/* mobile phone screen size */
+@media (max-width: 640px) {
+	.container {
+		width: 90%;
+		margin: auto;
+	}
+	
+	.content {
+		width: 90%;
+		margin: auto;
+	}
+	
+	header nav {
+		margin-left: -6px;
+	}
+	
+	header nav a {
+		width: 70px;
+	}
+	
+	a.tile section {
+		float: left;
+		width: calc( 100vw / 2 );
+		height: calc( 100vw / 2 );
+	}
+	
+	a.tile section div.tile-overlay {
+		background: rgba(0, 0, 0, .5);
+	}
+}
+
+/* tablet screen size */
+@media (min-width: 641px) and (max-width: 1024px) {
+	.container {
+		width: 95%;
+		margin: auto;
+	}
+	
+	.content {
+		width: 75%;
+		margin: auto;
+	}
+	
+	header nav a {
+		width: 128px;
+	}
+	
+	a.tile section {
+		float: left;
+		width: calc( (100vw / 3) );
+		height: calc( (100vw / 3) );
+	}
+	
+	a.tile section div.tile-overlay {
+		background: rgba(0, 0, 0, .5);
+	}
+}
+
+/* desktop screen size */
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.container {
+		width: 95%;
+		margin: auto;
+	}
+	
+	.content {
+		width: 65%;
+		margin: auto;
+	}
+	
+	header nav a {
+		width: 128px;
+	}
+	
+	a.tile section {
+		float: left;
+		width: calc( (100vw / 4) );
+		height: calc( (100vw / 4) );
+	}
+	
+	a.tile section div.tile-overlay {
+		opacity: 0;
+	}
+	
+	a.tile section div.tile-overlay:hover {
+		background: rgba(0, 0, 0, .75);
+		opacity: 1;
+	}
+}
+
+/* large desktop screen size */
+@media (min-width: 1441px) and (max-width: 1920px) {
+	.container {
+		width: 80%;
+		margin: auto;
+	}
+	
+	.content {
+		width: 60%;
+		margin: auto;
+	}
+	
+	header nav a {
+		width: 128px;
+	}
+	
+	a.tile section {
+		float: left;
+		width: calc( (100vw / 4) );
+		height: calc( (100vw / 4) );
+	}
+	
+	a.tile section div.tile-overlay {
+		opacity: 0;
+	}
+	
+	a.tile section div.tile-overlay:hover {
+		background: rgba(0, 0, 0, .75);
+		opacity: 1;
+	}
+}
+
+/* x-large desktop screen size */
+@media (min-width: 1921px) {
+	.container {
+		width: 75%;
+		margin: auto;
+	}
+	
+	.content {
+		width: 50%;
+		margin: auto;
+	}
+	
+	header nav a {
+		width: 128px;
+	}
+	
+	a.tile section {
+		float: left;
+		width: calc( (100vw / 5) );
+		height: calc( (100vw / 5) );
+	}
+	
+	a.tile section div.tile-overlay {
+		opacity: 0;
+	}
+	
+	a.tile section div.tile-overlay:hover {
+		background: rgba(0, 0, 0, .75);
+		opacity: 1;
+	}
+}
